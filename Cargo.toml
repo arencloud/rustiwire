@@ -1,0 +1,17 @@
+[package]
+name = "wirecli"
+authors = ["Eduard Gevorkyan <egevorkyan@outlook.com>"]
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tabled = { version = "0.10.0", features = ["tabled_derive"] }
+clap = { version = "4.1.4", features = ["derive", "wrap_help"] }
+dialoguer = "0.10.3"
+serde_json = "1.0.91"
+serde = { version = "1.0.152", features = ["derive"] }
+dirs = "4.0.0"
+reqwest = "0.11.14"
+tokio = "1.25.0"
